@@ -375,7 +375,7 @@ static uint8_t DFSDMx_Init(uint32_t AudioFreq, uint32_t ChnlNbr) {
   haudio_in_dfsdmchannel[0].Init.Awd.Oversampling         = 10;
   haudio_in_dfsdmchannel[0].Init.Offset                   = 0;
   haudio_in_dfsdmchannel[0].Init.RightBitShift            = shift_amount;
-  haudio_in_dfsdmchannel[0].Instance                      = DFSDM_Channel2;
+  haudio_in_dfsdmchannel[0].Instance                      = DFSDM_Channel0;
   
   if(HAL_DFSDM_ChannelGetState(&haudio_in_dfsdmchannel[0]) == HAL_DFSDM_CHANNEL_STATE_RESET)
   {
@@ -415,7 +415,7 @@ static uint8_t DFSDMx_Init(uint32_t AudioFreq, uint32_t ChnlNbr) {
   }
   
   /* Configure injected channel */
-  if(HAL_OK != HAL_DFSDM_FilterConfigRegChannel(&haudio_in_dfsdmfilter[0], DFSDM_CHANNEL_2, DFSDM_CONTINUOUS_CONV_ON))
+  if(HAL_OK != HAL_DFSDM_FilterConfigRegChannel(&haudio_in_dfsdmfilter[0], DFSDM_CHANNEL_0, DFSDM_CONTINUOUS_CONV_ON))
   {
     return AUDIO_ERROR;
   }

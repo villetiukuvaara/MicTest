@@ -199,7 +199,7 @@ extern DMA_HandleTypeDef               hdma_dfsdmReg_FLT[];
 
 #define AUDIO_IN_DFSDM_CLK_ENABLE()                             __HAL_RCC_DFSDM_CLK_ENABLE()
 
-#define AUDIO_IN_DFSDM_1st_CHANNEL                              DFSDM_Channel2
+#define AUDIO_IN_DFSDM_1st_CHANNEL                              DFSDM_Channel0
 #define AUDIO_IN_DFSDM_2nd_CHANNEL                              DFSDM_Channel1
 #define AUDIO_IN_DFSDM_3rd_CHANNEL                              DFSDM_Channel7
 #define AUDIO_IN_DFSDM_4rd_CHANNEL                              DFSDM_Channel6
@@ -215,7 +215,7 @@ extern DMA_HandleTypeDef               hdma_dfsdmReg_FLT[];
 
 #define AUDIO_IN_DFSDM_CH12_DATAIN_GPIO_CLK_ENABLE()            __HAL_RCC_GPIOB_CLK_ENABLE()
 #define AUDIO_IN_DFSDM_CH12_DATIN_GPIO_PORT                     GPIOB
-#define AUDIO_IN_DFSDM_CH12_DATIN_PIN                           GPIO_PIN_14
+#define AUDIO_IN_DFSDM_CH12_DATIN_PIN                           GPIO_PIN_1
 
 #define AUDIO_IN_DFSDM_CH34_DATAIN_GPIO_CLK_ENABLE()            __HAL_RCC_GPIOB_CLK_ENABLE()
 #define AUDIO_IN_DFSDM_CH34_DATIN_GPIO_PORT                     GPIOB
